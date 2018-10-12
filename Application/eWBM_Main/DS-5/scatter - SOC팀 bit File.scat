@@ -1,0 +1,33 @@
+LOAD_REGION 0x00000000 0x00030000
+{
+	CODE +0 0x00030000				;192K Bytes ROM
+	{
+		SDK_Exception.o (vectors, +FIRST)
+		* (+RO)
+	}
+
+	DATA 0x10030000 0x0000B000			;44K Bytes RAM
+	{
+		* (+RW, +ZI)
+	}
+
+	ARM_LIB_STACKHEAP 0x1003B000 EMPTY 0x1000	;4K Bytes Stack
+	{
+	}
+
+;	USER_BUFFER_01 0x1003C000 0x1000		;4K Bytes User Buffer For Memory Test
+;	{
+;	}
+	
+;	USER_BUFFER_02 0x1003D000 0x1000		;4K Bytes User Buffer For Memory Test
+;	{
+;	}
+
+;	USER_BUFFER_03 0x1003E000 0x1000		;4K Bytes User Buffer For Memory Test
+;	{
+;	}
+
+;	USER_BUFFER_04 0x1003F000 0x1000		;4K Bytes User Buffer For Memory Test
+;	{
+;	}
+}

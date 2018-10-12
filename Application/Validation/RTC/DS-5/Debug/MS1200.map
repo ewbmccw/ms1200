@@ -1,0 +1,210 @@
+Product: ARM Compiler 5.04
+Component: ARM Compiler 5.04
+Tool: armlink [5040027]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000101
+
+  Load Region LOAD_REGION (Base: 0x00000000, Size: 0x00003dec, Max: 0x00018000, ABSOLUTE)
+
+    Execution Region CODE (Base: 0x00000000, Size: 0x00003da0, Max: 0x00018000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000100   Data   RO          379    vectors             SDK_Exception.o
+    0x00000100   0x00000008   Code   RO          454  * !!!main             c_w.l(__main.o)
+    0x00000108   0x00000034   Code   RO          774    !!!scatter          c_w.l(__scatter.o)
+    0x0000013c   0x0000001a   Code   RO          776    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x00000156   0x00000002   Code   RO          631    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x00000158   0x00000000   Code   RO          650    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          653    .ARM.Collect$$libinit$$00000008  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          655    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          657    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          660    .ARM.Collect$$libinit$$0000000F  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          662    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          664    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          666    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          668    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          670    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          672    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          674    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          676    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          678    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          680    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          684    .ARM.Collect$$libinit$$0000002A  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          686    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          688    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x00000158   0x00000000   Code   RO          690    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x00000158   0x00000002   Code   RO          691    .ARM.Collect$$libinit$$00000031  c_w.l(libinit2.o)
+    0x0000015a   0x00000002   Code   RO          718    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0000015c   0x00000000   Code   RO          729    .ARM.Collect$$libshutdown$$00000003  c_w.l(libshutdown2.o)
+    0x0000015c   0x00000000   Code   RO          732    .ARM.Collect$$libshutdown$$00000006  c_w.l(libshutdown2.o)
+    0x0000015c   0x00000000   Code   RO          735    .ARM.Collect$$libshutdown$$00000009  c_w.l(libshutdown2.o)
+    0x0000015c   0x00000000   Code   RO          737    .ARM.Collect$$libshutdown$$0000000B  c_w.l(libshutdown2.o)
+    0x0000015c   0x00000000   Code   RO          740    .ARM.Collect$$libshutdown$$0000000E  c_w.l(libshutdown2.o)
+    0x0000015c   0x00000002   Code   RO          741    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x0000015e   0x00000000   Code   RO          456    .ARM.Collect$$rtentry$$00000000  c_w.l(rtentry.o)
+    0x0000015e   0x00000000   Code   RO          551    .ARM.Collect$$rtentry$$00000002  c_w.l(rtentry2.o)
+    0x0000015e   0x00000004   Code   RO          565    .ARM.Collect$$rtentry$$00000006  c_w.l(rtentry6.o)
+    0x00000162   0x00000000   Code   RO          553    .ARM.Collect$$rtentry$$00000009  c_w.l(rtentry2.o)
+    0x00000162   0x00000004   Code   RO          554    .ARM.Collect$$rtentry$$0000000A  c_w.l(rtentry2.o)
+    0x00000166   0x00000000   Code   RO          556    .ARM.Collect$$rtentry$$0000000C  c_w.l(rtentry2.o)
+    0x00000166   0x00000008   Code   RO          557    .ARM.Collect$$rtentry$$0000000D  c_w.l(rtentry2.o)
+    0x0000016e   0x00000002   PAD
+    0x00000170   0x00000004   Code   RO          566    .ARM.Collect$$rtentry$$00002717  c_w.l(rtentry6.o)
+    0x00000174   0x00000002   Code   RO          642    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x00000176   0x00000000   Code   RO          700    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x00000176   0x00000004   Code   RO          701    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x0000017a   0x00000006   Code   RO          702    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x00000180   0x00000090   Code   RO            3    .text               APP_Callback.o
+    0x00000210   0x000007a4   Code   RO          123    .text               main.o
+    0x000009b4   0x000013ec   Code   RO          141    .text               CRM_API.o
+    0x00001da0   0x00000210   Code   RO          159    .text               GPIO.o
+    0x00001fb0   0x00000054   Code   RO          175    .text               IRQ.o
+    0x00002004   0x00000990   Code   RO          205    .text               RTC.o
+    0x00002994   0x00000110   Code   RO          223    .text               SysTick.o
+    0x00002aa4   0x000003f4   Code   RO          241    .text               UART.o
+    0x00002e98   0x000001fc   Code   RO          257    .text               WDT.o
+    0x00003094   0x00000214   Code   RO          275    .text               HAL_GPIO.o
+    0x000032a8   0x00000106   Code   RO          307    .text               HAL_RTC.o
+    0x000033ae   0x00000002   PAD
+    0x000033b0   0x000000c0   Code   RO          323    .text               HAL_SysTick.o
+    0x00003470   0x000000a2   Code   RO          378    .text               SDK_Exception.o
+    0x00003512   0x00000002   PAD
+    0x00003514   0x0000008c   Code   RO          397    .text               SDK_Misc.o
+    0x000035a0   0x000002ac   Code   RO          413    .text               LED.o
+    0x0000384c   0x00000528   Code   RO          431    .text               Key.o
+    0x00003d74   0x0000000c   Code   RO          624    .text               c_w.l(exit.o)
+    0x00003d80   0x00000002   Code   RO          696    .text               c_w.l(use_no_semi.o)
+    0x00003d82   0x00000000   Code   RO          698    .text               c_w.l(indicate_semi.o)
+    0x00003d82   0x00000002   PAD
+    0x00003d84   0x0000000c   Code   RO          710    .text               c_w.l(sys_exit.o)
+    0x00003d90   0x00000010   Data   RO          772    Region$$Table       anon$$obj.o
+
+
+    Execution Region USER_BUFFER_04 (Base: 0x10012000, Size: 0x00000000, Max: 0x00001000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region DATA (Base: 0x10018000, Size: 0x0000004c, Max: 0x00006000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10018000   0x00000004   Data   RW            4    .data               APP_Callback.o
+    0x10018004   0x00000004   Data   RW          124    .data               main.o
+    0x10018008   0x00000008   Data   RW          142    .data               CRM_API.o
+    0x10018010   0x00000004   Data   RW          206    .data               RTC.o
+    0x10018014   0x00000004   Data   RW          224    .data               SysTick.o
+    0x10018018   0x00000004   Data   RW          258    .data               WDT.o
+    0x1001801c   0x0000000c   Data   RW          414    .data               LED.o
+    0x10018028   0x00000024   Data   RW          432    .data               Key.o
+
+
+    Execution Region USER_BUFFER_01 (Base: 0x1001e000, Size: 0x00000000, Max: 0x00000800, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region USER_BUFFER_02 (Base: 0x1001e800, Size: 0x00000000, Max: 0x00000800, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region USER_BUFFER_03 (Base: 0x1001f000, Size: 0x00000000, Max: 0x00001000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ARM_LIB_STACKHEAP (Base: 0x10021000, Size: 0x00001000, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10021000   0x00001000   Zero   RW            1    ARM_LIB_STACKHEAP.bss  anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       144          4          0          4          0      27837   APP_Callback.o
+      5100         44          0          8          0      23431   CRM_API.o
+       528         84          0          0          0       4633   GPIO.o
+       532         70          0          0          0       3703   HAL_GPIO.o
+       262          0          0          0          0       3026   HAL_RTC.o
+       192         72          0          0          0       1634   HAL_SysTick.o
+        84          8          0          0          0      14904   IRQ.o
+      1320        118          0         36          0       3987   Key.o
+       684         54          0         12          0       2780   LED.o
+      2448         90          0          4          0      14832   RTC.o
+       162          0        256          0          0       4334   SDK_Exception.o
+       140         68          0          0          0       1223   SDK_Misc.o
+       272         74          0          4          0       2051   SysTick.o
+      1012         84          0          0          0       8170   UART.o
+       508         72          0          4          0       4358   WDT.o
+      1956         10          0          4          0       3067   main.o
+
+    ----------------------------------------------------------------------
+     15348        852        272         76       4096     123970   Object Totals
+         0          0         16          0       4096          0   (incl. Generated)
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+        52          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        12          0          0          0          0         72   exit.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         0          0          0          0          0          0   rtentry.o
+        12          0          0          0          0          0   rtentry2.o
+         8          4          0          0          0          0   rtentry6.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       156         16          0          0          0        276   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       152         16          0          0          0        276   c_w.l
+
+    ----------------------------------------------------------------------
+       156         16          0          0          0        276   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     15504        868        272         76       4096     122354   Grand Totals
+     15504        868        272         76       4096     122354   ELF Image Totals
+     15504        868        272         76          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                15776 (  15.41kB)
+    Total RW  Size (RW Data + ZI Data)              4172 (   4.07kB)
+    Total ROM Size (Code + RO Data + RW Data)      15852 (  15.48kB)
+
+==============================================================================
+

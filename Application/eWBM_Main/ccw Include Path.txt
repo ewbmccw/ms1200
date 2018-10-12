@@ -1,0 +1,3 @@
+"D:\Projects\DS-5\MS1200 - New\SDK\Middleware\Third_Party\FreeRTOS\Source\CMSIS_RTOS"
+"D:\Projects\DS-5\MS1200 - New\SDK\Middleware\Third_Party\FreeRTOS\Source\include"
+"D:\Projects\DS-5\MS1200 - New\SDK\Middleware\Third_Party\FreeRTOS\Source\portable\DS-5\ARM_CM3"

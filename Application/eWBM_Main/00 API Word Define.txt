@@ -1,0 +1,2 @@
+Intialize ---> Init
+Command ---> Command, Comm ---> 함수명 길어질 경우 Comm

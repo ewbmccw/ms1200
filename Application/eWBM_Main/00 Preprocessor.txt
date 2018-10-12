@@ -1,0 +1,12 @@
+__CHECK_DEVICE_DEFINES ---> CMSIS
+
+
+__PRE_BOOT_LOADER ---> Bootloader
+
+
+__PRE_FPGA_MODE ---> FPGA Mode
+{
+
+	__PRE_FPGA_MODE_IP_TEAM ---> IP Team FPGA Mode
+
+}

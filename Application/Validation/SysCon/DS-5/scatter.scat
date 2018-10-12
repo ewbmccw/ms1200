@@ -1,0 +1,44 @@
+LOAD_REGION 0x00000000 0x00018000
+;LOAD_REGION 0x00000000 0x00010000
+{
+	CODE +0 0x00018000				;96K Bytes ROM
+;	CODE +0 0x00010000				;64K Bytes ROM
+	{
+		SDK_Exception.o (vectors, +FIRST)
+		* (+RO)
+	}
+
+	DATA 0x10018000 0x00006000			;24K Bytes RAM
+;	DATA 0x10010000 0x0000E000			;56K Bytes RAM
+;	DATA 0x20010000 0x0000E000			;56K Bytes RAM
+	{
+		* (+RW, +ZI)
+	}
+
+	USER_BUFFER_01 0x1001E000 0x800			;2K Bytes User Buffer For Memory Test
+;	USER_BUFFER_01 0x2001E000 0x800			;2K Bytes User Buffer For Memory Test
+	{
+	}
+	
+	USER_BUFFER_02 0x1001E800 0x800			;2K Bytes User Buffer For Memory Test
+;	USER_BUFFER_02 0x2001E800 0x800			;2K Bytes User Buffer For Memory Test
+	{
+	}
+
+	USER_BUFFER_03 0x1001F000 0x1000		;4K Bytes User Buffer For Memory Test
+;	USER_BUFFER_03 0x2001F000 0x1000		;4K Bytes User Buffer For Memory Test
+	{
+	}
+
+	USER_BUFFER_04 0x10012000 0x1000		;4K Bytes User Buffer For Memory Test
+;	USER_BUFFER_04 0x20012000 0x1000		;4K Bytes User Buffer For Memory Test
+	{
+	}
+
+;	ARM_LIB_STACKHEAP 0x1001F000 EMPTY 0x1000	;4K Bytes Stack
+	ARM_LIB_STACKHEAP 0x10021000 EMPTY 0x1000	;4K Bytes Stack ---> MS1200 Total SRAM: 136K Bytes
+;	ARM_LIB_STACKHEAP 0x2001F000 EMPTY 0x1000	;4K Bytes Stack
+;	ARM_LIB_STACKHEAP 0x20021000 EMPTY 0x1000	;4K Bytes Stack ---> MS1200 Total SRAM: 136K Bytes
+	{
+	}
+}

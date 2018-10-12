@@ -1,0 +1,32 @@
+GPIO_
+UART_
+SPI_
+I2S_
+I2C_
+ADC_
+TIM_		---> Timer
+RTC_
+SC_		---> Smart Card
+IRDA_
+USB_
+SDMMC_		---> SD/MMC
+SDIOM_		---> SDIO Master
+SDIOS_		---> SDIO Slave
+EBI_
+CRM_		---> Clock & Reset
+WDT_		---> Watchdog Timer
+CAN_
+DMA_
+
+SYS_		---> System Control
+
+STICK_		---> SysTick
+
+EFLASH_
+QSPI_
+
+SEC_		---> Security
+
+AES_
+RSA_
+HASH_
